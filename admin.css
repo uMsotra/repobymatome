@@ -1,0 +1,143 @@
+/* Reset some default styling */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Your existing styles */
+
+.header {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.header:before {
+    content: "";
+    background-image: url('header-background-image.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #ccc;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Your existing styles */
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.admin-login {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 400px;
+    text-align: center;
+}
+
+.admin-login h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.admin-login label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.admin-login input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.admin-login button {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.admin-login button:hover {
+    background-color: #555;
+}
+
+.home-link {
+    display: block;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.home-link:hover {
+    color: #555;
+}
+
+.admin-note {
+    margin-top: 1.5rem;
+    color: #888;
+    font-style: italic;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Admin Staff Section */
+.admin-staff {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.admin-staff h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.admin-staff p {
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+

@@ -1,0 +1,278 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Header h1 styles */
+  header h1 {
+    font-size: 2rem;
+    color: #fff;
+    margin-left: 20px;
+  }
+  
+  /* Navigation styles */
+  nav ul {
+    list-style-type: none;
+    margin-right: 20px;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  /* Main styles */
+  main {
+    padding: 20px;
+  }
+  
+  /* Form Container styles */
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center; /* Center align the form */
+}
+
+/* Title Container styles */
+#title_container h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Form Container styles */
+#form_container input[type="text"],
+#form_container input[type="tel"],
+#form_container select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px; /* Increase font size for better readability */
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style the submit button */
+#button_container button {
+  background-color: #ff6600;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#button_container button:hover {
+  background-color: #ff4500;
+}
+
+  
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.applicant-welcome h3 {
+  font-size: 1.5rem;
+}
+
+.applicant-welcome p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 20px 0;
+}
+
+/* Add the styles for the tutor section here (same as the previous example) */
+
+/* Styles for the welcome message */
+.applicant-welcome {
+  flex: 1;
+  text-align: center;
+}
+
+.applicant-welcome h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.applicant-welcome p {
+  font-size: 16px;
+}
+
+.tutors-section {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.tutor {
+  margin: 20px;
+  display: inline-block;
+}
+
+.tutor-box {
+  background-color: #333;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tutor-box:hover {
+  transform: scale(1.05);
+}
+
+.tutor-image {
+  max-width: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.tutor-info h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.tutor-info p {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.testimonial {
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+/* Add styles for screens smaller than 768px (adjust the breakpoint as needed) */
+@media screen and (max-width: 768px) {
+  /* Header styles for small screens */
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  header h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    margin-right: 10px;
+  }
+
+  /* Main content styles for small screens */
+  main {
+    padding: 10px;
+  }
+
+  /* Form container styles for small screens */
+  .form-container {
+    padding: 10px;
+  }
+
+  /* Title container styles for small screens */
+  #title_container h1 {
+    font-size: 1.5rem;
+  }
+
+  /* Form input fields styles for small screens */
+  #form_container input[type="text"],
+  #form_container input[type="tel"],
+  #form_container select {
+    font-size: 14px;
+  }
+
+  /* Submit button styles for small screens */
+  #button_container button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  /* Footer styles for small screens */
+  .footer-content {
+    margin-bottom: 20px;
+  }
+
+  .applicant-welcome h3 {
+    font-size: 1.2rem;
+  }
+
+  .applicant-welcome p {
+    font-size: 1rem;
+  }
+
+  /* Tutors section styles for small screens */
+  .tutor {
+    margin: 10px;
+  }
+
+  .tutor-box {
+    padding: 10px;
+  }
+
+  .tutor-image {
+    max-width: 80px;
+    margin-right: 10px;
+  }
+
+  .tutor-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .tutor-info p {
+    font-size: 1rem;
+  }
+
+  .testimonial {
+    margin-top: 0.5rem;
+  }
+}

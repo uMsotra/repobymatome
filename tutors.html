@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tutors.css">
+
+    <style>
+ /* Add styling for the tutor tiles */
+.tutor-tile {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  transition: transform 0.2s;
+}
+
+.tutor-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tutor-info {
+  padding: 10px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+a:hover {
+  background-color: #0056b3;
+}
+
+/* Add a subtle border animation for a nice effect */
+@keyframes borderAnimation {
+  0% {
+    border-color: #007bff;
+  }
+  50% {
+    border-color: #0056b3;
+  }
+  100% {
+    border-color: #007bff;
+  }
+}
+
+/* Apply the border animation to the "Search" button */
+#searchButton {
+  animation: borderAnimation 1.5s infinite;
+}
+ /* Media query for screens smaller than 768px (e.g., smartphones) */
+ @media (max-width: 768px) {
+        .tutor-tile {
+          /* Adjust styles for tutor tiles on small screens */
+          margin: 10px;
+          padding: 15px;
+        }
+
+        .tutor-info {
+          padding: 5px;
+        }
+
+        h3 {
+          font-size: 1.2rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+
+
+
+
+
+  .search-bar {
+    text-align: center; /* Center-align the search bar */
+    margin-top: 10px;
+  }
+
+  #searchInput {
+    width: 100%; /* Make the input field full width */
+  }
+
+  #searchButton {
+    margin-top: 10px;
+  }
+
+  /* Show the Home button */
+  .navigation li:first-child {
+    display: block;
+  }
+      }
+
+    </style>
+    <title>Avenue Tutors</title>
+</head>
+<body>
+    <section class="top-section">
+      
+    </section>
+  
+    <header class="header">
+
+        
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for course">
+            <button id="searchButton">Search</button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        
+
+    
+    
+        
+    </main>
+    <section class="tutors-container">
+        <h2 class="section-title">Available Tutors</h2>
+        <div id="tutors" class="tutor-grid">
+            <!-- Tutor listings will be dynamically added here -->
+        </div>
+    </section>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

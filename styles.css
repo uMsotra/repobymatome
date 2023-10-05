@@ -1,0 +1,413 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #585555;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+/* Header styles */
+.header {
+  background-color: transparent;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+/* Updated logo styles */
+.logo {
+  width: 300px; /* Adjust the size of the logo as needed */
+  height: auto;
+  margin-right: 20px;
+  filter: invert(100%); /* Invert the logo color to make it clear on dark backgrounds */
+}
+
+.navigation ul {
+  list-style-type: none;
+}
+
+.navigation li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Introduction section styles */
+.introduction {
+  text-align: center;
+  padding: 10rem 0;
+  position: relative;
+}
+
+.introduction h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.introduction p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #ff6600;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background-color: #ff4500;
+}
+
+/* Services section styles */
+.services {
+  background-color: #222;
+  padding: 10rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.services h2 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 4rem;
+}
+
+.service {
+  margin-bottom: 4rem;
+}
+
+.service h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.service p {
+  font-size: 1.2rem;
+  color: #ccc;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.service a {
+  display: inline-block;
+  background-color: #ff6600;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+/* Become a Tutor Section styles */
+.become-tutor {
+  background-color: #333;
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.become-tutor h3 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.become-tutor p {
+  font-size: 1.2rem;
+  color: #ccc;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.become-tutor a {
+  display: inline-block;
+  background-color: #ff6600;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.become-tutor a:hover {
+  background-color: #ff4500;
+}
+
+
+
+.service a:hover {
+  background-color: #ff4500;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-info,
+.social-media,
+.privacy-policy {
+  flex: 1;
+  max-width: 300px;
+  margin: 0 20px;
+}
+
+.contact-info h4,
+.social-media h4,
+.privacy-policy h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ff6600;
+}
+
+.contact-info p,
+.social-media ul,
+.privacy-policy p {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.social-media ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-media ul li {
+  margin-bottom: 1rem;
+}
+
+.social-media ul li a {
+  color: #ff6600;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.social-media ul li a:hover {
+  text-decoration: underline;
+}
+
+.privacy-policy a {
+  color: #ff6600;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.privacy-policy a:hover {
+  text-decoration: underline;
+}
+
+/* Copyright text */
+.footer p {
+  font-size: 1rem;
+  margin-top: 2rem;
+  color: #ccc;
+}
+
+/* Additional creative section styles go here */
+
+/* Contact Form Section styles */
+.contact-form {
+  background-color: #222;
+  padding: 10rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.contact-form h2 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 4rem;
+}
+
+.contact-form p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+.contact-form form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  background-color: #444;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button[type="submit"] {
+  background-color: #ff6600;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #ff4500;
+}
+
+/* Testimonials Section styles */
+.testimonials {
+  background-color: #111;
+  padding: 10rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.testimonials h2 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 4rem;
+}
+
+.testimonial {
+  margin-bottom: 4rem;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #333;
+}
+
+.testimonial blockquote {
+  font-size: 1.5rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.testimonial p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* About Us Section styles */
+.about-section {
+  background-color: #222;
+  padding: 10rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.about-content h2 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 4rem;
+}
+
+.about-content p {
+  font-size: 1.5rem;
+  color: #ccc;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Team Section styles */
+.team-section {
+  background-color: #111;
+  padding: 10rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.team-section h2 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 4rem;
+}
+
+.team-member {
+  margin-bottom: 4rem;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #333;
+}
+
+.team-member img {
+  max-width: 10%;
+  border-radius: 10%;
+  margin-bottom: 1rem;
+}
+
+.team-member h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.team-member p {
+  font-size: 1.2rem;
+  color: #ccc;
+  line-height: 1.4;
+}
+
+/* Additional creative section styles go here */
+

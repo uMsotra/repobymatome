@@ -1,0 +1,95 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #585555;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  }
+  
+  /* Header styles */
+  .header {
+    background-color: transparent;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  /* Updated logo styles */
+  .logo {
+    width: 300px; /* Adjust the size of the logo as needed */
+    height: auto;
+    margin-right: 20px;
+    filter: invert(100%); /* Invert the logo color to make it clear on dark backgrounds */
+  }
+  
+  .navigation ul {
+    list-style-type: none;
+  }
+  
+  .navigation li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  /* Privacy Policy page specific styles */
+  .privacy-policy-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    margin-top: 100px; /* Adjust the margin-top as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+  }
+  
+  .privacy-policy-container h2 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  .privacy-policy-container p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Additional styles for headings, links, and other elements can be added as needed */
+  
+  /* Footer styles */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Copyright text */
+  .footer p {
+    font-size: 1rem;
+    margin-top: 2rem;
+    color: #ccc;
+  }
+  
+  /* Additional creative section styles go here */
+  

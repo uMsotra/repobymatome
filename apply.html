@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    
+    <meta charset="utf-8">
+    <title>Homeworkers - Become a Tutor</title>
+    <link rel="stylesheet" href="apply.css">
+    <link rel="stylesheet" href="tutors.css">
+   
+</head>
+<body>
+   
+    <header>
+        <div class="logo-section">
+            <a href="index.html">
+                <img src="logo.png" alt="Assignment Avenue Logo" class="logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+               
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ... Existing HTML ... -->
+
+<main>
+    <div class="form-container">
+        <div id="title_container">
+            <h1>Tutor Application</h1>
+            <!-- ... Title and subtitle ... -->
+        </div>
+        <style>
+            /* Basic styling for the dropdown */
+            select {
+                padding: 10px;
+                width: 100%;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            /* Add a media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media (max-width: 768px) {
+  /* Reset some styles to make the form full-width and more prominent on mobile */
+  #form_container {
+    text-align: center; /* Center align the form */
+    padding: 20px; /* Add some padding to the form container */
+  }
+  
+  /* Adjust input and select styles for better mobile display */
+  #form_container input[type="text"],
+  #form_container input[type="tel"],
+  #form_container select {
+    width: 100%; /* Make inputs and selects full-width */
+    padding: 15px; /* Increase padding for touch-friendly interaction */
+    font-size: 18px; /* Increase font size for better readability */
+    margin: 10px 0; /* Add some spacing between inputs */
+  }
+
+  /* Style the submit button for mobile */
+  #button_container button {
+    width: 100%; /* Make the button full-width */
+    padding: 15px; /* Increase button padding for touch-friendly interaction */
+    font-size: 18px; /* Increase button font size for better readability */
+  }
+}
+
+        </style>
+
+        <div id="form_container">
+            <input placeholder="Name" type="text" id="name" maxlength="10"/>
+           
+            <input placeholder="Please enter phone number in the format 27123456789" type="text" id="number"/>
+            <input placeholder="Course Code" type="text" id="subject"/>
+            <input placeholder="Final Mark In Course" type="text" id="marks" maxlength="2"/>
+            <select id="university">
+                <option value="" disabled selected>Select University</option>
+                <option value="" disabled selected>Select University</option>
+                <option value="UCT">University of Cape Town</option>
+                <option value="SU">Stellenbosch University</option>
+                <option value="UP">University of Pretoria</option>
+                <option value="WITS">University of the Witwatersrand</option>
+                <option value="US">University of South Africa</option>
+                <option value="NWU">North-West University</option>
+                <option value="UKZN">University of KwaZulu-Natal</option>
+                <option value="UJ">University of Johannesburg</option>
+                <option value="RU">Rhodes University</option>
+                <option value="UFH">University of Fort Hare</option>
+                <option value="SU">Sefako Makgatho Health Sciences University</option>
+                <option value="UFS">University of the Free State</option>
+                <option value="CUT">Central University of Technology</option>
+                <option value="TUT">Tshwane University of Technology</option>
+                <option value="MUT">Mangosuthu University of Technology</option>
+                <option value="DUT">Durban University of Technology</option>
+                <option value="UNISA">University of South Africa</option>
+                <!-- Add more options for other universities -->
+            </select>
+
+        </div>
+
+        <div id="button_container">
+            <button id="submit" onclick="save()"> SUBMIT </button>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+      <div class="applicant-welcome">
+        <h3>Welcome, Applicants!</h3>
+        <p>We appreciate your interest in becoming a part of Assignment Avenue. Please fill out the form to apply and make money with gigs tailored for you.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <section class="tutors-section">
+    <h2>Our Tutors Of The Month</h2>
+    <div class="tutor">
+        <div class="tutor-box">
+            <img src="pa.jpg" alt="Tutor 3" class="tutor-image">
+            <div class="tutor-info">
+                <h3>Palesa</h3>
+                <p>University of the Witwatersrand</p>
+            </div>
+        </div>
+        <p class="testimonial">"I made money to cover my student costs with this plartform, this is the place to be!"</p>
+    </div>
+    <div class="tutor">
+        <div class="tutor-box">
+            <img src="zodwa.jpeg" alt="Tutor 1" class="tutor-image">
+            <div class="tutor-info">
+                <h3>Zodwa</h3>
+                <p>University of Cape Town</p>
+            </div>
+        </div>
+        <p class="testimonial">"I had to quit my job at UCT because I was making enough at Assignment Avenue!"</p>
+    </div>
+    <!-- Add more tutor profiles as needed -->
+    <div class="tutor">
+        <div class="tutor-box">
+            <img src="dlamini.jpg" alt="Tutor 2" class="tutor-image">
+            <div class="tutor-info">
+                <h3>Sibusiso</h3>
+                <p>University of Johannesburg</p>
+            </div>
+        </div>
+        <p class="testimonial">"I started as a client for Assignment Avenue, now I earn with Assignment Avenue!"</p>
+    </div>
+
+</section>
+
+    
+      
+      <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+      <script src="apply.js"></script>
+     
+      <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-storage.js"></script>
+
+      
+
+
+
+</body>
+</html>
